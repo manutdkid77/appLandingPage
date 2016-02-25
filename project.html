@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap App Landing Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    .box{
+      background-color: #D4D2D4;
+      border:1px solid #848080;
+    }
+    .navbar-brand{
+      font-size: 1.7em;
+    }
+    #appContainer{
+      background-image: url("img/picjumbo.com_HNCK0365.jpg");
+      background-size: cover;
+    }
+    .navbar-inverse{
+      margin: 0;
+    }
+    body{
+      font-family: 'Lato', sans-serif;
+      padding-top: 40px;
+    }
+    #appDetailsBox{
+      text-align: center;
+      color: white;
+    }
+    #appTitle{
+          font-size: 3.9em;
+    }
+    #linkButton{
+      margin-top: 25px;
+    }
+    #detailsContent{
+      text-align: center;
+      color: yellow;
+      background-image: url("img/grass-bokeh-33924-34689-hd-wallpapers.jpg");
+      background-size: cover;
+    }
+    #detailsTitle{
+      font-size: 5em;
+      margin-top: 53px;
+    }
+    .col-md-4{
+      margin-top: 20px;
+      text-align: justify;
+      margin-top: 20px;
+    }
+    #miscContainer{
+      background-image: url("img/wallpaper-1903185.jpg");
+      background-size: cover;
+      color: white;
+    }
+    .miscContainerClass{
+      text-align: center;
+    }
+    .miscContainerClass h2{
+      margin-top: 200px;
+      font-size: 4.0em;
+    }
+    .miscContainerClass p{
+
+      font-size:2.0em;
+    }
+    .miscContainerClass img{
+      width: 200px;
+    margin-top: 15px;
+    }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#navList">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="" class="navbar-brand">App Landing Page</a>
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#navList">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navList">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#appContainer">Home</a></li>
+            <li><a href="#detailsContent">Products</a></li>
+            <li><a href="#miscContainer">Contact-Us</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <button class="btn btn-success">Log-In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bodyContainer" id="appContainer">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3" id="appDetailsBox">
+          <h1 id="appTitle">NDLN Live</h1>
+          <p class="lead">Thiou should visit this site</p>
+          <p>Seamlessly empower extensive manufactured products and functional potentialities. Intrinsicly scale stand-alone customer.</p>
+          <p><b>Interested? <a href="">Join</a> our mailing list</b></p>
+
+          <form>
+          <div class="input-group input-">
+            <span class="input-group-addon">@</span><input type="email" class="form-control" placeholder="your email here">
+          </div>
+          <button class="btn btn-danger btn-lg" id="linkButton">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+      
+      <div class="container-fluid bodyContainer" id="detailsContent">
+        <div class="row">
+          <h1 id="detailsTitle">This app is awesome</h1>
+          <p class="strong">Summary of the app's awesomeness</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4" id="firstThumb">
+            <h2><span class="glyphicon glyphicon-ice-lolly"></span>Clean UI</h2>
+            <p>Distinctively negotiate cross-platform bandwidth with holistic applications. Phosfluorescently disseminate exceptional value through virtual total linkage. Quickly innovate an expanded array of architectures after.</p>
+            <button class="btn btn-success pull-center" data-toggle="modal" data-target="#modal1">Preview</button>
+          </div>
+
+          <div class="col-md-4">
+            <h2><span class="glyphicon glyphicon-flash"></span>Snappy Performance</h2>
+            <p>Distinctively negotiate cross-platform bandwidth with holistic applications. Phosfluorescently disseminate exceptional value through virtual total linkage. Quickly innovate an expanded array of architectures after.</p>
+            <button class="btn btn-success pull-center">Preview</button>
+          </div>
+          <div class="col-md-4">
+            <h2><span class="glyphicon glyphicon-education"></span> Fresh</h2>
+            <p>Distinctively negotiate cross-platform bandwidth with holistic applications. Phosfluorescently disseminate exceptional value through virtual total linkage. Quickly innovate an expanded array of architectures after.</p>
+            <button class="btn btn-success pull-center">Preview</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bodyContainer miscContainerClass" id="miscContainer">
+        <div class="row">
+          <h2>Convinced?</h2>
+          <p class="strong">Then, give it a try</p>
+          <img src="img/825778_orig.png">
+        </div>
+      </div>
+
+      <div class="modal" id="modal1">
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times</button>
+              <div class="modal-title"><h4>Welcome</h4></div>  
+            </div>
+            <div class="modal-body">
+              Seamlessly synthesize client-based methods of empowerment after optimal networks. Enthusiastically e-enable enabled growth strategies vis-a-vis professional sources. Continually reintermediate cross-platform process improvements for goal-oriented leadership skills. Interactively provide access to team building technologies after best-of-breed markets.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript">
+    /*  var winH=$(window).height();
+      var navH=$(".navbar").height();
+      var bodyH=winH-navH; 
+      $(".bodyContainer").height(bodyH);*/
+     $(".bodyContainer").css("min-height",$(window).height());
+    </script>
+  </body>
+</html>
